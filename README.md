@@ -7,10 +7,10 @@
 
 ### use the Makefile
 
-  * make sure there are no running services on the port 8080, otherwise change the port in the `Makefile`
-  * run `make` (with docker privileges, e.g. as root)
-  * browse to [`127.0.0.1:8080`](http://127.0.0.1:8080) or issue `make open` beforehand
-  * when you are done, `Ctrl-C` out and rerun `make` to update the test instance with your new changes
+  * Make sure there are no running services on the port 8080, otherwise change the port in the `Makefile`
+  * Run `make` (with docker privileges, e.g. as root)
+  * Browse to [`127.0.0.1:8080`](http://127.0.0.1:8080) or issue `make open` beforehand
+  * When you are done, `Ctrl-C` out and rerun `make` to update the test instance with your new changes
 
 After testing your changes, `make clean` provides a convenient way to clean up after you, stopping and removing all the containers you have created in the process of testing.
 If you want to get rid of remainders of the process: `make clean` removes all containers, `make purge` removes all containers including all images (be aware that they need to be redownloaded and such next time you test the website, so you probably usually do not want to issue a `make purge` unless you are in severe need of disk space).
